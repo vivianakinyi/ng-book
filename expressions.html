@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title>Expressions</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/myApp.js"></script>
+</head>
+<body>
+<div>
+	<div ng-controller = "MyController">
+		<h4>Enter a number to parse</h4>
+		<input ng-model="expr" type="text" placeholder="Enter an expression"/>
+		<h2>{{ parsedValue }}</h2>
+	</div>
+
+<!-- To show interpolation of a string-->
+	<div ng-controller="InterpolateCtrl">
+		<fieldset>
+			<legend>Email Preview App</legend>
+			<label>To :</label>
+			<input ng-model="to" type="email" placeholder="Recipient"><br />
+
+			<label>Email</label>
+			<textarea ng-model="emailBody"></textarea>
+
+		</fieldset>
+	
+		<h4>Let preview your email: </h4>
+		<pre>{{ previewText }}</pre>
+		
+	</div>
+</div>
+</body>
+</html>

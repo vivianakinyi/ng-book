@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Services</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/services.js"></script>
+</head>
+<body>
+<h4>To show use of a service in a simple calcutator.</h4>
+	<div ng-controller="CalculatorCtrl">
+	<input type="number" ng-model="number"/>
+	<button ng-click="doSquare()">Square</button>
+
+	<p>Answer: {{ answer }}</p>
+		
+	</div>
+
+	<!-- <h4>To show use of factory service to get json data</h4>
+	<div ng-controller="patientsCtrl">
+		<ol>
+			<li ng-repeat="x in names">
+				{{ x.name + ' , ' +  x.title}}
+			</li>
+		</ol>
+	</div> -->
+
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="directiveApp">
+<head>
+	<title>Introduction to Directives</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/directives.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/directives.css">
+</head>
+<body>
+<h1>These are directive examples</h1>
+	<!-- <div my-directive
+		my-url="http://google.com"
+		my-link-text="Click me to go to Google">
+	</div> -->
+
+	<div ng-controller="PatientsController">
+	Number of patients: {{ patients.length }}.<br />
+	<input type="search" ng-model="query" placeholder="Search Patients" />
+		<table>
+			<thead>
+				<td>Index</td>
+				<td>Name</td>
+				<td>Age</td>
+			</thead>
+			<tbody>
+				<tr ng-repeat="patient in patients | filter:query as results" ng-class="{even: !$even, odd: !$odd}">
+					<td>{{$index + 1 }}</td>
+					<td> {{ patient.name}}</td>
+					<td>{{patient.age}} </td>
+				</tr>
+			</tbody>
+		</table>
+
+			<p ng-if="results.length == 0">
+				<strong>No results found...</strong>
+			</p>
+		</ul>
+	</div>
+
+
+
+
+	<div>
+		<input type="text" ng-model="myUrl" />
+		<div my-directive my-url="{{ myUrl }}"
+			 my-link-text="Click me to go to Google">
+		</div> <br />
+
+		Name:
+			<input type="text"
+			ng-model="user.name"
+			ng-model-options="{ updateOn: 'blur' }" />
+			Hello {{user.name}}
+		</div>
+</body>
+</html>
+

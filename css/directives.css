@@ -1,0 +1,11 @@
+table, tr, td{
+	border:1px solid black; margin: 1em; height:2px; width:auto; 
+}
+thead {font-weight: bolder;}
+.even {
+	color: blue;
+}
+
+.odd {
+	color: gray;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="FirstControllerApp">
+<head>
+	<title>Scope Hierachy</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/firstController.js"></script>
+</head>
+<body>
+	<div ng-controller="ParentController">
+		<div ng-controller="ChildController">
+			<a href="#" ng-click="sayHello()">Say hello</a>
+			{{ person }}
+			
+		</div>	
+	</div>
+
+</body>
+</html>

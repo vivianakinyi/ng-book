@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="FilterApp">
+<head>
+	<title>Filters</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/filters.js"></script>
+</head>
+<body>
+	<div ng-controller="BuiltInFilters">
+	<input ng-model="string" type="text"><br/>
+		<h4>Full string is: {{ string }}</h4>
+		<p>LimitTo 5 gives <strong>:{{ string | limitTo:5  }}</strong></p>
+		<p>LimitTo -6 gives <strong>:{{ string | limitTo:-6  }}</strong></p>
+
+		<p>To change to uppercase <strong>:{{ string | uppercase }}</strong></p>
+		<p>LimitTo -6 gives <strong>:{{ string | limitTo:-6  }}</strong></p>
+
+		<p>Using my custom filter to capitalize <strong>:{{ string | capitalize }}</strong></p>
+		<p>Using my custom filter to reverse <strong>:{{ string | reverse }}</strong></p>
+		
+	</div>
+	<div ng-controller="TimeController">
+		<h4>Using Tick tock example we can filter the date in the following ways:</h4>
+		
+			<p> From Raw clock: {{ clock.now }}</li>
+			<p>To: <strong>{{ clock.now | date: 'MMM d,y hh:mm:ss.sss' }}</strong></p>
+		
+	</div>
+
+</body>
+</html>
+

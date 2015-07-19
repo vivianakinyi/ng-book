@@ -1,0 +1,43 @@
+[
+	{
+		 "name" : "Denis Karanja",
+		 "title" : "Developer",
+		 "company" : "Deebeat City KE",
+		 "bio" : "The lead developer for Deebeat City KE"
+	},
+
+	{
+		 "name" : "Vivian Akinyi",
+		 "title" : "Designer",
+		 "company" : "Google Inc",
+		 "bio" : "The lead designer in Yahoo Inc"
+	},
+
+	{
+		 "name" : "Jesica Lord",
+		 "title" : "Analyst",
+		 "company" : "Github",
+		 "bio" : "Business analyst at Github"
+	},
+
+	{
+		 "name" : "Faith Kangai",
+		 "title" : "Strategist",
+		 "company" : "Deebeat City KE",
+		 "bio" : "The lead strategist in the company"
+	},
+
+	{
+		 "name" : "Rosemary Muchiri",
+		 "title" : "Medical Officer",
+		 "company" : "Sagam Hospital",
+		 "bio" : "The lead MO in the company"
+	},
+
+	{
+		 "name" : "Daniel Itangi",
+		 "title" : "Human Resource",
+		 "company" : "Barclays Bank KE",
+		 "bio" : "Human Resource assistant"
+	}
+]

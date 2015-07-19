@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="restangularApp">
+<head>
+	<title>Communicating with the Outside World: XHR and Server-Side Communication</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/communication.js"></script>
+	<script type="text/javascript" src="bower_components/restangular/src/restangular.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+</head>
+<body>
+	<div ng-controller="patientsCtrl">
+		<h1>XHR and Server-Side Communication</h1>
+		<ol>
+			<li ng-repeat="x in names">
+				{{ x.Name + ' , ' +  x.Country}}
+			</li>
+		</ol>
+	</div>
+
+</body>
+</html>
+
