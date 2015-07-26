@@ -1,0 +1,15 @@
+transalte<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Simple app</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./js/simpleApp.js"></script>
+</head>
+<body>
+	<div ng-controller="TranslateController">
+		<button ng-click="changeLanguage('swa')" translate="BUTTON_TEXT_DE"></button>
+		<button ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN"></button>
+</div>
+</body>
+</html>
+

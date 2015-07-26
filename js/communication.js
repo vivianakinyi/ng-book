@@ -1,10 +1,10 @@
 angular.module('HttpApp', [])
 .controller('patientsCtrl', 
 	function($scope, $http){
-		$http.get("data/data.json")
-		// .success(function(response) {
-		// 	{$scope.names = response.records;}
-		// })
+		$http.get("data/data.json",{
+			cache:true
+		})
+		
 		.success(function(data) {
 			{
 				$scope.names = data;}

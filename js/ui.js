@@ -8,7 +8,7 @@ app.controller("WizardSignUpController",function($scope, $state){
 app.config(function($stateProvider, $urlRouterProvider){
 	//when takes two param: one we want to match and redirect path 
 	//eg. if empty, redirect to login
-	$urlRouterProvider.when("", "/login");
+	$urlRouterProvider.when("", "/index");
 
 	$stateProvider
 	.state('wizard', {
