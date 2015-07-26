@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>UI-ROUTER</title>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="./js/ui.js"></script>
+</head>
+<body>
+	<div ng-controller="WizardSignUpController">
+	<h2>Start Signup Wizard</h2>
+		<div ui-view="wizard.start"></div>
+		<div ui-view="wizard.email"></div>
+		<div ui-view="wizard.finish"></div>
+	</div>
+
+</body>
+</html>
+
